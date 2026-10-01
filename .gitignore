@@ -40,6 +40,10 @@ next-env.d.ts
 .genkit/*
 .env*
 
+# Selenium test credentials (CNBC)
+Wordcount.java/src/test/resources/cnbc.credentials.properties
+Wordcount.java/target/screenshots/
+
 # firebase
 firebase-debug.log
 firestore-debug.log

@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.cnbc.selenium.tests.CnbcSignInTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.897 s <<< FAILURE! -- in com.cnbc.selenium.tests.CnbcSignInTest
+com.cnbc.selenium.tests.CnbcSignInTest.signInWithCredentials -- Time elapsed: 3.886 s <<< ERROR!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=148.0.7778.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1', java.version: '26.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3d1e1712deef3ea44766c0bfb76cb63, findChildElements {value=input[name='email'], using=css selector, id=f.C94B954194679CB12F13E1782476EC47.d.816CD2330FEE760538D902728AF52274.e.142}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: /var/folders/1s/6z6zsl9d705...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51328}, goog:processID: 3745, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51328/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3d1e1712deef3ea44766c0bfb76cb63
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)
+	at org.openqa.selenium.support.ui.ExpectedConditions$42.apply(ExpectedConditions.java:1202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$42.apply(ExpectedConditions.java:1196)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.cnbc.selenium.pages.SignInModalPage.waitForModalFormReady(SignInModalPage.java:47)
+	at com.cnbc.selenium.pages.SignInModalPage.waitForModal(SignInModalPage.java:40)
+	at com.cnbc.selenium.pages.SignInModalPage.signIn(SignInModalPage.java:63)
+	at com.cnbc.selenium.tests.CnbcSignInTest.signInWithCredentials(CnbcSignInTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
